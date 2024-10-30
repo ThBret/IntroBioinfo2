@@ -83,77 +83,88 @@ Pour un exercice qui se concentre exclusivement sur les effets des insertions et
 
 ---
 
+---
+
 ### Exercice 3 : Impact des Insertions et Délétions sur la Traduction des Séquences ADN
 
 Cet exercice vous aidera à comprendre comment les insertions et délétions modifient la séquence de bases d'un gène et perturbent la traduction en protéine.
 
-#### Étapes
-
 1. **Considérons la séquence suivante (exemple simplifié d’un fragment de gène)** :
    
-   ```
-   ATG GCA CTT GAA TGA
-   ```
+```
+ATG GCA CTT GAA TGA
+```
    
    Cette séquence se traduit en acides aminés en utilisant le code génétique. Traduisez-la pour obtenir la chaîne d'acides aminés correspondante.
 
-   <details> <summary>Solution</summary>
-   - Traduction : `ATG GCA CTT GAA TGA`
-   - Codons d’acides aminés : Met - Ala - Leu - Glu - Stop
-   </details>
+<details> <summary>Solution</summary>
+
+- Traduction : `ATG GCA CTT GAA TGA`
+- Codons d’acides aminés : Met - Ala - Leu - Glu - Stop
+
+</details>
 
 2. **Insertion d'une base** :
-   - Imaginez qu'une insertion d’une base (A) survienne après le premier codon `ATG`.
-   - La nouvelle séquence devient :
+- Imaginez qu'une insertion d’une base (A) survienne après le premier codon `ATG`.
+- La nouvelle séquence devient :
    
-     ```
-     ATG *A* GCA CTT GAA TGA
-     ```
+```
+ATG *A* GCA CTT GAA TGA
+```
    
    **Question :** Traduisez cette nouvelle séquence en acides aminés. Que se passe-t-il pour la séquence traduite ?
 
-   <details> <summary>Solution</summary>
-   Avec l'insertion, la séquence devient `ATG AGC ACT TGA ATG A`. La traduction change et pourrait entraîner une perte de fonctionnalité de la protéine à cause d’un décalage du cadre de lecture (frameshift).
-   </details>
+<details> <summary>Solution</summary>
+
+Avec l'insertion, la séquence devient `ATG AGC ACT TGA ATG A`. La traduction change et pourrait entraîner une perte de fonctionnalité de la protéine à cause d’un décalage du cadre de lecture (frameshift).
+
+</details>
 
 3. **Délétion d'une base** :
-   - Imaginez maintenant qu'une délétion d’une base (C) ait lieu dans le codon `GCA`.
-   - La séquence devient alors :
+- Imaginez maintenant qu'une délétion d’une base (C) ait lieu dans le codon `GCA`.
+- La séquence devient alors :
    
-     ```
-     ATG GAC TTG AAT GA
-     ```
+```
+ATG GAC TTG AAT GA
+```
    
-   **Question :** Traduisez cette séquence en acides aminés et décrivez l’impact sur la chaîne protéique.
+**Question :** Traduisez cette séquence en acides aminés et décrivez l’impact sur la chaîne protéique.
 
-   <details> <summary>Solution</summary>
-   - La séquence devient `ATG GAC TTG AAT GA`, provoquant aussi un décalage du cadre de lecture.
-   - Le résultat traduit est `Met - Asp - Leu - Asn`, avec potentiellement une protéine inactive ou tronquée.
-   </details>
+<details> <summary>Solution</summary>
+
+- La séquence devient `ATG GAC TTG AAT GA`, provoquant aussi un décalage du cadre de lecture.
+- Le résultat traduit est `Met - Asp - Leu - Asn`, avec potentiellement une protéine inactive ou tronquée.
+
+</details>
 
 4. **Étude de plusieurs mutations** :
    - Insérez 3 bases supplémentaires après le premier codon `ATG` (exemple : ajout de `CGT`).
    - La nouvelle séquence devient :
    
-     ```
-     ATG *CGT* GCA CTT GAA TGA
-     ```
+```
+ATG *CGT* GCA CTT GAA TGA
+```
    
-   **Question :** Traduisez cette séquence et comparez-la avec les traductions précédentes. Est-ce que cette insertion provoque un frameshift ?
+**Question :** Traduisez cette séquence et comparez-la avec les traductions précédentes. Est-ce que cette insertion provoque un frameshift ?
 
-   <details> <summary>Solution</summary>
-   - Traduction avec insertion de 3 bases : `Met - Arg - Ala - Leu - Glu - Stop`.
-   - En ajoutant un multiple de trois bases, le cadre de lecture reste inchangé, permettant une traduction plus cohérente sans frameshift.
-   </details>
+<details> <summary>Solution</summary>
+   
+- Traduction avec insertion de 3 bases : `Met - Arg - Ala - Leu - Glu - Stop`.
+- En ajoutant un multiple de trois bases, le cadre de lecture reste inchangé, permettant une traduction plus cohérente sans frameshift.
+
+</details>
 
 ---
 
 #### Conclusion
 
 - **Question finale :** Que se passe-t-il lorsqu’une insertion ou délétion n’est pas un multiple de trois par rapport à la protéine finale ?
-   <details> <summary>Solution</summary>
-   Les insertions ou délétions qui ne sont pas des multiples de trois provoquent un frameshift, entraînant une traduction complètement différente et une probabilité élevée de générer une protéine non fonctionnelle.
-   </details>
+  
+<details> <summary>Solution</summary>
+
+Les insertions ou délétions qui ne sont pas des multiples de trois provoquent un frameshift, entraînant une traduction complètement différente et une probabilité élevée de générer une protéine non fonctionnelle.
+
+</details>
 
 ---
 
