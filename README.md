@@ -2,7 +2,12 @@
 
 ---
 
-### Exercice 1 : Aligner 2 séquences ADN
+### Exercice 1 : Notions de génétique : traduction et transcription
+
+![image](https://github.com/user-attachments/assets/8e82fa1b-6542-4617-992b-a2bda738d691)
+
+
+### Exercice 2 : Aligner 2 séquences ADN
 
 Après avoir utilisé l'outil BLAST pour identifier une séquence ADN inconnue et la base de données NCBI pour télécharger une séquence ADN d'intérêt, nous allons maintenant voir comment comparer deux séquences avec l'outil BLAST.
 
