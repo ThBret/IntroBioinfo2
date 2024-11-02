@@ -54,7 +54,7 @@ Séquence d’acides aminés : `Met (Méthionine) - Arg (Arginine) - Glu (Acide 
 ATG *A* CGG GAA CTT TAA
 ```
    
-#### 4. Traduisez cette nouvelle séquence en acides aminés. Comment la séquence traduite est-elle affectée ?
+#### D. Traduisez cette nouvelle séquence en acides aminés. Comment la séquence traduite est-elle affectée ?
 
 <details> <summary>Solution</summary>
 
@@ -64,7 +64,7 @@ L'insertion crée un décalage du cadre de lecture qui pourrait entraîner une p
 
 </details>
 
-#### 5. Comment appelle-t-on une mutation qui affecte la séquence protéique de cette manière ?
+#### E. Comment appelle-t-on une mutation qui affecte la séquence protéique de cette manière ?
 
 <details> <summary>Solution</summary>
 
@@ -72,8 +72,7 @@ L'insertion cause ici une mutation **faux-sens** car elle n'interrompt pas la s�
 
 </details>
 
-
-3. **Substitution d'un nuclétoide** :
+2. **Substitution d'un nuclétoide** :
 - Imaginez maintenant qu'une substitution d'nuclétoide (A → G) ait lieu dans le codon `TAA`.
 - La séquence devient alors :
    
@@ -81,7 +80,7 @@ L'insertion cause ici une mutation **faux-sens** car elle n'interrompt pas la s�
 ATG CGG GAA CTT TGA
 ```
 
-#### 5. Traduisez cette nouvelle séquence en acides aminés. Comment la séquence traduite est-elle affectée ?
+#### F. Traduisez cette nouvelle séquence en acides aminés. Comment la séquence traduite est-elle affectée ?
 
 <details> <summary>Solution</summary>
 
@@ -91,7 +90,7 @@ Le résultat est similaire à la séquence originale, car le codon de terminaiso
 
 </details>
 
-#### 6. Comment appelle-t-on une mutation qui affecte la séquence protéique de cette manière ?
+#### G. Comment appelle-t-on une mutation qui affecte la séquence protéique de cette manière ?
 
 <details> <summary>Solution</summary>
 
@@ -172,13 +171,6 @@ L'absence d'alignement significatif suggère que BRCA1 et HOXA10 ne partagent pa
 #### B. Pourquoi un décalage du cadre de lecture est-il souvent plus problématique qu'une mutation ponctuelle ?
 
 <details> <summary>Solution</summary> Un frameshift modifie toute la séquence d'acides aminés en aval de l'indel, tandis qu'une mutation ponctuelle ne change qu'un seul acide aminé, rendant les frameshifts potentiellement bien plus délétères. </details>
-
----
-
-#### B. ...
-
-
-Pour un exercice qui se concentre exclusivement sur les effets des insertions et des délétions sans utiliser d'alignement ou de BLAST, voici une suggestion. Cet exercice va explorer comment les indels influencent la séquence ADN et la traduction en protéine, en particulier via les décalages du cadre de lecture.
 
 ---
 
