@@ -2,10 +2,104 @@
 
 ---
 
-### Exercice 1 : Notions de génétique : traduction et transcription
+### Exercice 1 : Impact des mutations ponctuelles sur les séquences ADN et protéique
 
-![image](https://github.com/user-attachments/assets/8e82fa1b-6542-4617-992b-a2bda738d691)
+Cet exercice vous aidera à comprendre comment les mutations ponctuelles (substitutions, insertions et délétions) modifient les séquences génétiques et perturbent leur traduction en protéines.
 
+
+#### A. Considérez la séquence suivante (brin codant), à quoi correspond le brin d'ADN complémentaire (brin matrice) ?
+
+```
+ATG CGG GAA CTT TAA
+```
+   
+Rappel :
+* L'adénine (**A**) s’apparie à la thymine (**T**).
+* La thymine (**T**) à l'adénine (**A**).
+* La guanine (**G**) à la cytosine (**C**).
+* La cytosine (**C**) à la guanine (**G**).
+
+<details> <summary>Solution</summary>
+
+Brin matrice : `TAC GCC CTT GAA ATT`
+
+</details>
+
+#### B. À quoi correspond un ARN transcrit à partir de cette séquence ?
+
+Rappel : L'ARN est transcrit à partir du brin matrice, mais il est identique au brin codant à l’exception de la thymine (**T**) qui est remplacée par l'uracile (**U**).
+
+<details> <summary>Solution</summary>
+
+Transcription : `AUG CGG GAA CUU UAA`
+
+</details>
+
+#### C. À quelle séquence d'acides aminés correspond cette séquence une fois traduite ?
+
+Référez-vous au tableau ci-dessous pour trouver la correspondance entre codons ARN et acides aminés (il ne vous sera pas demandé de mémoriser ce tableau).
+
+<img src="https://github.com/user-attachments/assets/8e82fa1b-6542-4617-992b-a2bda738d691" width=50% height=50%>\
+
+<details> <summary>Solution</summary>
+
+Séquence d’acides aminés : `Met (Méthionine) - Arg (Arginine) - Glu (Acide glutamique) - Leu (Leucine) - Stop`
+
+</details>
+
+1. **Insertion d'une base** :
+- Imaginez qu'une insertion d’une base (A) survienne après le premier codon `ATG`.
+
+```
+ATG *A* CGG GAA CTT TAA
+```
+   
+#### 4. Traduisez cette nouvelle séquence en acides aminés. Comment la séquence traduite est-elle affectée ?
+
+<details> <summary>Solution</summary>
+
+Avec l'insertion, la séquence devient `ATG ACG GGA ACT TTA A`, ce qui, une fois transcrit en ARN, correspond à la séquence d'acides aminés suivant : `Met (Méthionine) - Thr (Thréonine) - Gly (Glycine) - Thr (Thréonine) - Leu (Leucine)`
+
+L'insertion crée un décalage du cadre de lecture qui pourrait entraîner une perte de fonctionnalité de la protéine.
+
+</details>
+
+#### 5. Comment appelle-t-on une mutation qui affecte la séquence protéique de cette manière ?
+
+<details> <summary>Solution</summary>
+
+L'insertion cause ici une mutation **faux-sens** car elle n'interrompt pas la séquence, mais entraîne une succession de codons qui codent pour des acides aminés différents.
+
+</details>
+
+
+3. **Substitution d'un nuclétoide** :
+- Imaginez maintenant qu'une substitution d'nuclétoide (A → G) ait lieu dans le codon `TAA`.
+- La séquence devient alors :
+   
+```
+ATG CGG GAA CTT TGA
+```
+
+#### 5. Traduisez cette nouvelle séquence en acides aminés. Comment la séquence traduite est-elle affectée ?
+
+<details> <summary>Solution</summary>
+
+Avec la substitution, la séquence devient `ATG CGG GAA CTT TGA`, ce qui, une fois transcrit en ARN, correspond à la séquence d'acides aminés suivant : `Met (Méthionine) - Arg (Arginine) - Glu (Acide glutamique) - Leu (Leucine) - Stop`.
+
+Le résultat est similaire à la séquence originale, car le codon de terminaison (TAA) est remplacé par un autre codon stop (TGA), ne modifiant pas la fin de la protéine.
+
+</details>
+
+#### 6. Comment appelle-t-on une mutation qui affecte la séquence protéique de cette manière ?
+
+<details> <summary>Solution</summary>
+
+L'insertion cause ici une mutation **silencieuse** car elle ne change pas la séquence d'acides aminés produite.
+
+</details>
+
+---
 
 ### Exercice 2 : Aligner 2 séquences ADN
 
@@ -88,89 +182,3 @@ Pour un exercice qui se concentre exclusivement sur les effets des insertions et
 
 ---
 
----
-
-### Exercice 3 : Impact des Insertions et Délétions sur la Traduction des Séquences ADN
-
-Cet exercice vous aidera à comprendre comment les insertions et délétions modifient la séquence de bases d'un gène et perturbent la traduction en protéine.
-
-1. **Considérons la séquence suivante (exemple simplifié d’un fragment de gène)** :
-   
-```
-ATG GCA CTT GAA TGA
-```
-   
-   Cette séquence se traduit en acides aminés en utilisant le code génétique. Traduisez-la pour obtenir la chaîne d'acides aminés correspondante.
-
-<details> <summary>Solution</summary>
-
-- Traduction : `ATG GCA CTT GAA TGA`
-- Codons d’acides aminés : Met - Ala - Leu - Glu - Stop
-
-</details>
-
-2. **Insertion d'une base** :
-- Imaginez qu'une insertion d’une base (A) survienne après le premier codon `ATG`.
-- La nouvelle séquence devient :
-   
-```
-ATG *A* GCA CTT GAA TGA
-```
-   
-   **Question :** Traduisez cette nouvelle séquence en acides aminés. Que se passe-t-il pour la séquence traduite ?
-
-<details> <summary>Solution</summary>
-
-Avec l'insertion, la séquence devient `ATG AGC ACT TGA ATG A`. La traduction change et pourrait entraîner une perte de fonctionnalité de la protéine à cause d’un décalage du cadre de lecture (frameshift).
-
-</details>
-
-3. **Délétion d'une base** :
-- Imaginez maintenant qu'une délétion d’une base (C) ait lieu dans le codon `GCA`.
-- La séquence devient alors :
-   
-```
-ATG GAC TTG AAT GA
-```
-   
-**Question :** Traduisez cette séquence en acides aminés et décrivez l’impact sur la chaîne protéique.
-
-<details> <summary>Solution</summary>
-
-- La séquence devient `ATG GAC TTG AAT GA`, provoquant aussi un décalage du cadre de lecture.
-- Le résultat traduit est `Met - Asp - Leu - Asn`, avec potentiellement une protéine inactive ou tronquée.
-
-</details>
-
-4. **Étude de plusieurs mutations** :
-   - Insérez 3 bases supplémentaires après le premier codon `ATG` (exemple : ajout de `CGT`).
-   - La nouvelle séquence devient :
-   
-```
-ATG *CGT* GCA CTT GAA TGA
-```
-   
-**Question :** Traduisez cette séquence et comparez-la avec les traductions précédentes. Est-ce que cette insertion provoque un frameshift ?
-
-<details> <summary>Solution</summary>
-   
-- Traduction avec insertion de 3 bases : `Met - Arg - Ala - Leu - Glu - Stop`.
-- En ajoutant un multiple de trois bases, le cadre de lecture reste inchangé, permettant une traduction plus cohérente sans frameshift.
-
-</details>
-
----
-
-#### Conclusion
-
-- **Question finale :** Que se passe-t-il lorsqu’une insertion ou délétion n’est pas un multiple de trois par rapport à la protéine finale ?
-  
-<details> <summary>Solution</summary>
-
-Les insertions ou délétions qui ne sont pas des multiples de trois provoquent un frameshift, entraînant une traduction complètement différente et une probabilité élevée de générer une protéine non fonctionnelle.
-
-</details>
-
----
-
-Cet exercice permet aux étudiants de voir directement comment les indels affectent le cadre de lecture et la traduction d’une protéine, mettant en lumière les conséquences fonctionnelles de ces mutations.
