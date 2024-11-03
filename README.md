@@ -187,11 +187,19 @@ Après avoir utilisé l'outil BLAST pour identifier une séquence ADN inconnue e
 
 6. Prenez un moment pour explorer la page des résultats.
 
-#### A. Quelle est la longueur de l'alignement ? Score ?
+#### A. Quelle est la longueur de l'alignement ? Et le pourcentage d'identité des séquences ?
 
 <details> <summary>Solution</summary>
   
-L'alignement est composé de 170 381 caractères, ce qui est plus long que 
+L'alignement est composé de 85 192 caractères et les séquences ont un pourcentage d'identité de 81,72%.
+
+</details>
+
+#### B. Que peut-on conclure de ces résultats ?
+
+<details> <summary>Solution</summary>
+
+Le haut degré de similarité des deux séquences indiquent que les gènes _BRCA1_ et _BRCA2_ ont probablement une fonction similaire et des liens évolutifs proches.
 
 </details>
 
@@ -199,7 +207,7 @@ L'alignement est composé de 170 381 caractères, ce qui est plus long que
 
 ---
 
-#### B. Quel est le résultat obtenu ?
+#### C. Quel est le résultat obtenu ?
 
 <details> <summary>Solution</summary>
   
@@ -207,13 +215,13 @@ La page de résultat indique qu'aucun résultat significatif n'a pu être déter
 
 </details>
 
-8. Jusqu'à là, nous avons seulement utilisé l'algorithme par défaut (*megablast*), qui sert à comparer des séquences très similaires. Essayez maintenant de comparer les gènes _HOXA2_ et _HOXA10_ avec l'algorithme *blastn*.
+8. Jusqu'à là, nous avons seulement utilisé l'algorithme par défaut (*megablast*), qui sert à comparer des séquences très similaires. Essayez maintenant de comparer les gènes _HOXA2_ et _HOXA10_ avec l'algorithme *blastn* qui est adapté pour des séquences moins similaires.
 
 <img width="766" alt="Screenshot 2024-11-03 at 13 17 28" src="https://github.com/user-attachments/assets/311a3348-bd4e-487a-a03f-b650bfe26792">
 
 ---
 
-#### C. Quel est le résultat maintenant obtenu ?
+#### D. Quel est le résultat maintenant obtenu ?
 
 <details> <summary>Solution</summary>
   
@@ -226,7 +234,7 @@ Cette fois-ci, on obtient bien un alignement des deux séquences, ce qui indique
 
 ---
 
-#### D. Quel est le résultat obtenu ici ?
+#### E. Quel est le résultat obtenu ici ?
 
 <details> <summary>Solution</summary>
   
@@ -236,7 +244,7 @@ Quel que soit l'algorithme d'alignement choisi, il sera impossible de former un 
 
 ---
 
-#### E. Comment peut-on interpréter ce résultat sur la similarité fonctionnelle et évolutive de BRCA1 et HOXA10 ?
+#### F. Comment peut-on interpréter ce résultat sur la similarité fonctionnelle et évolutive de BRCA1 et HOXA10 ?
 
 <details> <summary>Solution</summary>
 
