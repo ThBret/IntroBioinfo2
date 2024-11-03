@@ -112,6 +112,8 @@ L'insertion cause ici une mutation **silencieuse** car elle ne change pas la sé
 
 ---
 
+<br></br>
+
 ### Exercice 2 : Alignement de séquences et distances de Hamming et Levenshtein
 
 Cet exercice vous aidera à comprendre comment les distances de Hamming et de Levenshtein mesurent les différences entre deux séquences génétiques.
@@ -161,11 +163,13 @@ Les substitutions ponctuelles modifient généralement un seul acide aminé, ce 
 
 ---
 
+<br></br>
+
 ### Exercice 3 : Aligner 2 séquences ADN
 
 Après avoir utilisé l'outil BLAST pour identifier une séquence ADN inconnue et la base de données NCBI pour télécharger une séquence ADN d'intérêt, nous allons maintenant voir comment comparer deux séquences avec l'outil BLAST.
 
-1. Téléchargez les fichiers “BRCA1.fna”, "BRCA2.fna" et "HOXA10.fna".
+1. Téléchargez les fichiers “brca1.fna”, "brca2.fna", "hoxa2.fna" "hoxa10.fna".
    
 2. Accédez au site BLAST : https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
@@ -173,7 +177,7 @@ Après avoir utilisé l'outil BLAST pour identifier une séquence ADN inconnue e
 
 <img width="1419" alt="Screenshot 2024-10-19 at 15 02 28" src="https://github.com/user-attachments/assets/5568bb01-06ed-472d-ae22-ef5792a0de70">
 
-4. Comparez les gènes BRCA1 et BRCA2. Pour ce faire, copiez/collez l'intégralité des séquences OU sélectionnez l'option **upload file** pour directement les téléverser.
+4. Alignez les gènes _BRCA1_ et _BRCA2_. Pour ce faire, copiez/collez l'intégralité des séquences OU sélectionnez l'option **upload file** pour directement les téléverser.
 
 <img width="1427" alt="Screenshot 2024-10-19 at 14 58 28" src="https://github.com/user-attachments/assets/38be81d6-445c-4e80-a514-7d424b6631e7">
 
@@ -181,9 +185,9 @@ Après avoir utilisé l'outil BLAST pour identifier une séquence ADN inconnue e
 
 <img width="111" alt="Screenshot 2024-10-19 at 15 07 07" src="https://github.com/user-attachments/assets/89ff0454-bc6e-4626-887b-35fc155c2f2a">
 
-6. Explorez les résultats.
+6. Prenez un moment pour explorer la page des résultats.
 
-#### A. Quelle est la longueur de l'alignement ? Est-il de même taille ou plus long que les séquences données ?
+#### A. Quelle est la longueur de l'alignement ? Score ?
 
 <details> <summary>Solution</summary>
   
@@ -191,34 +195,51 @@ L'alignement est composé de 170 381 caractères, ce qui est plus long que
 
 </details>
 
----
-
-#### B. Question sur les résultats
-
-7. Comparaison de BRCA1 et HOXA10
+7. Alignez maintenant les gènes _HOXA2_ et _HOXA10_
 
 ---
 
-#### C. Quel est le résultat obtenu ?
+#### B. Quel est le résultat obtenu ?
 
 <details> <summary>Solution</summary>
   
-La page de résultat indique qu'aucun résultat significatif n'a pu être determiné, ce qui signifie que les séquences sont trop différentes. Cela veut dire que BRCA1 et HOXA10 sont des gènes dont les fonctions et de structures sont très différentes.
+La page de résultat indique qu'aucun résultat significatif n'a pu être déterminé, ce qui signifie que les séquences sont trop différentes l'une de l'autre.
+
+</details>
+
+8. Jusqu'à là, nous avons seulement utilisé l'algorithme par défaut (*megablast*), qui sert à comparer des séquences très similaires. Essayez maintenant de comparer les gènes _HOXA2_ et _HOXA10_ avec l'algorithme *blastn*.
+
+<img width="766" alt="Screenshot 2024-11-03 at 13 17 28" src="https://github.com/user-attachments/assets/311a3348-bd4e-487a-a03f-b650bfe26792">
+
+---
+
+#### C. Quel est le résultat maintenant obtenu ?
+
+<details> <summary>Solution</summary>
+  
+Cette fois-ci, on obtient bien un alignement des deux séquences, ce qui indique que bien qu'elles correspondent à deux gènes d'une même famille, ces gènes sont loin d'être identiques au niveau de leur séquence.
+
+</details>
+
+
+9. Essayez d'aligner les gènes _BRCA1_ et _HOXA10_ avec l'algorithme d'alignement de votre choix.
+
+---
+
+#### D. Quel est le résultat obtenu ici ?
+
+<details> <summary>Solution</summary>
+  
+Quel que soit l'algorithme d'alignement choisi, il sera impossible de former un alignement entre ces deux séquences.
 
 </details>
 
 ---
 
-#### D. Comment peut-on interpréter ce résultat sur la similarité fonctionelle et structurelle de BRCA1 et HOXA10 ?
+#### E. Comment peut-on interpréter ce résultat sur la similarité fonctionnelle et évolutive de BRCA1 et HOXA10 ?
 
 <details> <summary>Solution</summary>
-   
-L'absence d'alignement significatif suggère que BRCA1 et HOXA10 ne partagent pas de similarités de séquence importantes et qu'ils ont ainsi problablement des fonctions très différentes.
+
+L'absence d'alignement possible est le résultat de la différence trop grande des deux séquences. Cela indique que les gènes _BRCA1_ et _HOXA10_ ont probablement des fonctions très distinctes et des rapports évolutifs éloignés.
 
 </details>
-
-8. Répétez le processus mais en changeant l'option d'alignement pour **More dissimilar sequences**, la deuxième option.
-
-<img width="906" alt="Screenshot 2024-10-19 at 15 30 09" src="https://github.com/user-attachments/assets/a789ef76-eebb-45e7-ab54-2db88bc829a8">
-
-
