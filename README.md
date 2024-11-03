@@ -100,6 +100,49 @@ L'insertion cause ici une mutation **silencieuse** car elle ne change pas la sé
 
 ---
 
+### Exercice 2 : Alignement de séquences et distances de Hamming et Levenshtein
+
+Cet exercice vous aidera à comprendre comment les distances de Hamming et de Levenshtein mesurent les différences entre deux séquences génétiques.
+
+#### A. Considérez les deux séquences d'ADN suivantes. Calculez la distance de Hamming entre les deux séquences.
+
+```
+Séquence 1 : ATG CGG GAA CTT TAA
+Séquence 2 : ATG CGA GGA CTT TGA
+```
+
+Rappel : La distance de Hamming est le nombre de positions où les nucléotides sont différents entre deux séquences de même longueur (elle est uniquement utilisée lorsque les séquences sont de la même longueur).
+
+<details><summary>Solution</summary>
+   
+Distance de Hamming : 3
+Différences aux positions : 5 (G ↔ A), 8 (A ↔ G), et 14 (A ↔ G)
+
+</details>
+
+#### B. Supposons que la séquence 2 soit modifiée de la manière suivante, en ajoutant une base A après le premier codon ATG. Calculez la distance de Levenshtein entre les séquences.
+
+Rappel : La distance de Levenshtein entre deux séquences est le nombre minimal d'opérations nécessaires pour transformer une séquence en une autre. Les opérations autorisées sont les insertions, les délétions et les substitutions. Contrairement à la distance de Hamming, la distance de Levenshtein peut être utilisée pour des séquences de longueurs différentes.
+
+```
+Séquence 1 :            ATG   CGG GAA CTT TAA
+Séquence 2 (modifiée) : ATG A CGA GGA CTT TGA
+```
+
+<details><summary>Solution</summary>
+   
+**Distance de Levenshtein** : 4
+Explication : Une insertion (A) après le premier codon ATG, et trois substitutions aux positions restantes.
+
+</details>
+
+#### C. Supposons que les séquences ci-dessus correspondent à des gènes codant pour des protéines. Une mutation par insertion est-elle plus susceptible de modifier la fonction de la protéine qu'une substitution ponctuelle ?
+
+<details><summary>Solution</summary>
+Les substitutions ponctuelles modifient généralement un seul acide aminé, ce qui peut affecter la fonction de la protéine ou être silencieux. Cependant, une insertion provoque un décalage du cadre de lecture, altérant potentiellement tous les acides aminés en aval, ce qui est plus susceptible de rendre la protéine non fonctionnelle.
+
+</details>
+
 ### Exercice 2 : Aligner 2 séquences ADN
 
 Après avoir utilisé l'outil BLAST pour identifier une séquence ADN inconnue et la base de données NCBI pour télécharger une séquence ADN d'intérêt, nous allons maintenant voir comment comparer deux séquences avec l'outil BLAST.
