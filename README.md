@@ -25,6 +25,8 @@ Brin matrice : `TAC GCC CTT GAA ATT`
 
 </details>
 
+---
+
 #### B. À quoi correspond un ARN transcrit à partir de cette séquence ?
 
 Rappel : L'ARN est transcrit à partir du brin matrice, mais il est identique au brin codant à l’exception de la thymine (**T**) qui est remplacée par l'uracile (**U**).
@@ -34,6 +36,8 @@ Rappel : L'ARN est transcrit à partir du brin matrice, mais il est identique au
 Transcription : `AUG CGG GAA CUU UAA`
 
 </details>
+
+---
 
 #### C. À quelle séquence d'acides aminés correspond cette séquence une fois traduite ?
 
@@ -53,6 +57,8 @@ Séquence d’acides aminés : `Met (Méthionine) - Arg (Arginine) - Glu (Acide 
 ```
 ATG *A* CGG GAA CTT TAA
 ```
+
+---
    
 #### D. Traduisez cette nouvelle séquence en acides aminés. Comment la séquence traduite est-elle affectée ?
 
@@ -63,6 +69,8 @@ Avec l'insertion, la séquence devient `ATG ACG GGA ACT TTA A`, ce qui, une fois
 L'insertion crée un décalage du cadre de lecture qui pourrait entraîner une perte de fonctionnalité de la protéine.
 
 </details>
+
+---
 
 #### E. Comment appelle-t-on une mutation qui affecte la séquence protéique de cette manière ?
 
@@ -80,6 +88,8 @@ L'insertion cause ici une mutation **faux-sens** car elle n'interrompt pas la s�
 ATG CGG GAA CTT TGA
 ```
 
+---
+
 #### F. Traduisez cette nouvelle séquence en acides aminés. Comment la séquence traduite est-elle affectée ?
 
 <details> <summary>Solution</summary>
@@ -89,6 +99,8 @@ Avec la substitution, la séquence devient `ATG CGG GAA CTT TGA`, ce qui, une fo
 Le résultat est similaire à la séquence originale, car le codon de terminaison (TAA) est remplacé par un autre codon stop (TGA), ne modifiant pas la fin de la protéine.
 
 </details>
+
+---
 
 #### G. Comment appelle-t-on une mutation qui affecte la séquence protéique de cette manière ?
 
@@ -120,6 +132,8 @@ Différences aux positions : 5 (G ↔ A), 8 (A ↔ G), et 14 (A ↔ G)
 
 </details>
 
+---
+
 #### B. Supposons que la séquence 2 soit modifiée de la manière suivante, en ajoutant une base A après le premier codon ATG. Calculez la distance de Levenshtein entre les séquences.
 
 Rappel : La distance de Levenshtein entre deux séquences est le nombre minimal d'opérations nécessaires pour transformer une séquence en une autre. Les opérations autorisées sont les insertions, les délétions et les substitutions. Contrairement à la distance de Hamming, la distance de Levenshtein peut être utilisée pour des séquences de longueurs différentes.
@@ -136,6 +150,8 @@ Explication : Une insertion (A) après le premier codon ATG, et trois substituti
 
 </details>
 
+---
+
 #### C. Supposons que les séquences ci-dessus correspondent à des gènes codant pour des protéines. Une mutation par insertion est-elle plus susceptible de modifier la fonction de la protéine qu'une substitution ponctuelle ?
 
 <details><summary>Solution</summary>
@@ -143,7 +159,9 @@ Les substitutions ponctuelles modifient généralement un seul acide aminé, ce 
 
 </details>
 
-### Exercice 2 : Aligner 2 séquences ADN
+---
+
+### Exercice 3 : Aligner 2 séquences ADN
 
 Après avoir utilisé l'outil BLAST pour identifier une séquence ADN inconnue et la base de données NCBI pour télécharger une séquence ADN d'intérêt, nous allons maintenant voir comment comparer deux séquences avec l'outil BLAST.
 
@@ -155,8 +173,6 @@ Après avoir utilisé l'outil BLAST pour identifier une séquence ADN inconnue e
 
 <img width="1419" alt="Screenshot 2024-10-19 at 15 02 28" src="https://github.com/user-attachments/assets/5568bb01-06ed-472d-ae22-ef5792a0de70">
 
-<br></br>
-
 4. Comparez les gènes BRCA1 et BRCA2. Pour ce faire, copiez/collez l'intégralité des séquences OU sélectionnez l'option **upload file** pour directement les téléverser.
 
 <img width="1427" alt="Screenshot 2024-10-19 at 14 58 28" src="https://github.com/user-attachments/assets/38be81d6-445c-4e80-a514-7d424b6631e7">
@@ -167,11 +183,23 @@ Après avoir utilisé l'outil BLAST pour identifier une séquence ADN inconnue e
 
 6. Explorez les résultats.
 
-#### A. Question sur les résultats
+#### A. Quelle est la longueur de l'alignement ? Est-il de même taille ou plus long que les séquences données ?
+
+<details> <summary>Solution</summary>
+  
+L'alignement est composé de 170 381 caractères, ce qui est plus long que 
+
+</details>
+
+---
+
+#### B. Question sur les résultats
 
 7. Comparaison de BRCA1 et HOXA10
 
-#### B. Quel est le résultat obtenu ?
+---
+
+#### C. Quel est le résultat obtenu ?
 
 <details> <summary>Solution</summary>
   
@@ -179,7 +207,9 @@ La page de résultat indique qu'aucun résultat significatif n'a pu être determ
 
 </details>
 
-#### C. Comment peut-on interpréter ce résultat sur la similarité fonctionelle et structurelle de BRCA1 et HOXA10 ?
+---
+
+#### D. Comment peut-on interpréter ce résultat sur la similarité fonctionelle et structurelle de BRCA1 et HOXA10 ?
 
 <details> <summary>Solution</summary>
    
@@ -191,29 +221,4 @@ L'absence d'alignement significatif suggère que BRCA1 et HOXA10 ne partagent pa
 
 <img width="906" alt="Screenshot 2024-10-19 at 15 30 09" src="https://github.com/user-attachments/assets/a789ef76-eebb-45e7-ab54-2db88bc829a8">
 
-
-
-#### C. ...
-
-<details> <summary>Indice</summary>
-...
-</details>
-
-<details> <summary>Solution</summary>
-  
-```bash
-...
-```
-
-#### A. Que peut signifier l'ajout ou la perte de bases dans un gène en termes de fonction protéique ?
-
-<details> <summary>Solution</summary> Les insertions ou délétions d'un nombre de bases qui ne sont pas des multiples de trois provoquent des décalages du cadre de lecture (frameshifts), ce qui peut mener à des protéines tronquées ou mal repliées, voire non fonctionnelles. </details>
-
-</details>
-
-#### B. Pourquoi un décalage du cadre de lecture est-il souvent plus problématique qu'une mutation ponctuelle ?
-
-<details> <summary>Solution</summary> Un frameshift modifie toute la séquence d'acides aminés en aval de l'indel, tandis qu'une mutation ponctuelle ne change qu'un seul acide aminé, rendant les frameshifts potentiellement bien plus délétères. </details>
-
----
 
