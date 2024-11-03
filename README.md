@@ -2,7 +2,7 @@
 
 ---
 
-### Exercice 1 : Impact des mutations ponctuelles sur les séquences ADN et protéique
+### Exercice 1 : Impact des mutations ponctuelles sur les séquences ADN et protéiques
 
 Cet exercice vous aidera à comprendre comment les mutations ponctuelles (substitutions, insertions et délétions) modifient les séquences génétiques et perturbent leur traduction en protéines.
 
@@ -106,7 +106,7 @@ Le résultat est similaire à la séquence originale, car le codon de terminaiso
 
 <details> <summary>Solution</summary>
 
-L'insertion cause ici une mutation **silencieuse** car elle ne change pas la séquence d'acides aminés produite.
+L'insertion cause ici une mutation **synonyme** car elle ne change pas la séquence d'acides aminés produite.
 
 </details>
 
@@ -136,28 +136,33 @@ Différences aux positions : 5 (G ↔ A), 8 (A ↔ G), et 14 (A ↔ G)
 
 ---
 
-#### B. Supposons que la séquence 2 soit modifiée de la manière suivante, en ajoutant une base A après le premier codon ATG. Calculez la distance de Levenshtein entre les séquences.
+#### B. Supposons que la séquence 2 soit modifiée de la manière suivante. Calculez la distance de Levenshtein entre les séquences.
 
 Rappel : La distance de Levenshtein entre deux séquences est le nombre minimal d'opérations nécessaires pour transformer une séquence en une autre. Les opérations autorisées sont les insertions, les délétions et les substitutions. Contrairement à la distance de Hamming, la distance de Levenshtein peut être utilisée pour des séquences de longueurs différentes.
 
 ```
-Séquence 1 :            ATG   CGG GAA CTT TAA
-Séquence 2 (modifiée) : ATG A CGA GGA CTT TGA
+Séquence 1 :            ATG CGT AAC ATT TAA
+Séquence 2 (modifiée) : ATG ACG TAA GAT AAA
 ```
 
 <details><summary>Solution</summary>
-   
-**Distance de Levenshtein** : 4
-Explication : Une insertion (A) après le premier codon ATG, et trois substitutions aux positions restantes.
+
+```
+ATG -CG TAA CAT TTA A
+ATG ACG TAA GAT -AA A
+1   3   6   9   12
+```
+
+Il y a plusieurs manières d'aligner ces deux séquences mais on peut obtenir une distance de Levenshtein de 4 de cette manière. Ici, une délétion après le premier codon ATG permet de mieux aligner les séquences puis des substitutions aux positions 10, 13 et 14 permettent de compléter l'alignement.
 
 </details>
 
 ---
 
-#### C. Supposons que les séquences ci-dessus correspondent à des gènes codant pour des protéines. Une mutation par insertion est-elle plus susceptible de modifier la fonction de la protéine qu'une substitution ponctuelle ?
+#### C. Supposons que les séquences ci-dessus correspondent à des gènes codant pour des protéines. Une mutation par indel (insertion ou délétion) est-elle plus susceptible de modifier la fonction de la protéine qu'une substitution ponctuelle ?
 
 <details><summary>Solution</summary>
-Les substitutions ponctuelles modifient généralement un seul acide aminé, ce qui peut affecter la fonction de la protéine ou être silencieux. Cependant, une insertion provoque un décalage du cadre de lecture, altérant potentiellement tous les acides aminés en aval, ce qui est plus susceptible de rendre la protéine non fonctionnelle.
+Les substitutions ponctuelles modifient généralement un seul acide aminé, ce qui peut affecter la fonction de la protéine ou être silencieux. Cependant, un indel provoque un décalage du cadre de lecture, altérant potentiellement tous les acides aminés en aval, ce qui est plus susceptible de rendre la protéine non fonctionnelle.
 
 </details>
 
@@ -165,11 +170,11 @@ Les substitutions ponctuelles modifient généralement un seul acide aminé, ce 
 
 <br></br>
 
-### Exercice 3 : Aligner 2 séquences ADN
+### Exercice 3 : Aligner deux gènes
 
 Après avoir utilisé l'outil BLAST pour identifier une séquence ADN inconnue et la base de données NCBI pour télécharger une séquence ADN d'intérêt, nous allons maintenant voir comment comparer deux séquences avec l'outil BLAST.
 
-1. Téléchargez les fichiers “brca1.fna”, "brca2.fna", "hoxa2.fna" "hoxa10.fna".
+1. Téléchargez les fichiers “brca1.fna”, "brca2.fna", "hoxb13.fna" "hoxa10.fna".
    
 2. Accédez au site BLAST : https://blast.ncbi.nlm.nih.gov/Blast.cgi
 
@@ -203,7 +208,7 @@ Le haut degré de similarité des deux séquences indiquent que les gènes _BRCA
 
 </details>
 
-7. Alignez maintenant les gènes _HOXA2_ et _HOXA10_
+7. Alignez maintenant les gènes _HOXB13_ et _HOXA10_
 
 ---
 
@@ -215,7 +220,7 @@ La page de résultat indique qu'aucun résultat significatif n'a pu être déter
 
 </details>
 
-8. Jusqu'à là, nous avons seulement utilisé l'algorithme par défaut (*megablast*), qui sert à comparer des séquences très similaires. Essayez maintenant de comparer les gènes _HOXA2_ et _HOXA10_ avec l'algorithme *blastn* qui est adapté pour des séquences moins similaires.
+8. Jusqu'à là, nous avons seulement utilisé l'algorithme par défaut (*megablast*), qui sert à comparer des séquences très similaires. Essayez maintenant de comparer les gènes _HOXB13_ et _HOXA10_ avec l'algorithme *blastn* qui est adapté pour des séquences moins similaires.
 
 <img width="766" alt="Screenshot 2024-11-03 at 13 17 28" src="https://github.com/user-attachments/assets/311a3348-bd4e-487a-a03f-b650bfe26792">
 
