@@ -123,6 +123,7 @@ Cet exercice vous aidera à comprendre comment les distances de Hamming et de Le
 ```
 Séquence 1 : ATG CGG GAA CTT TAA
 Séquence 2 : ATG CGA GGA CTT TGA
+             1   4   7  10  13
 ```
 
 Rappel : La distance de Hamming est le nombre de positions où les nucléotides sont différents entre deux séquences de même longueur (elle est uniquement utilisée lorsque les séquences sont de la même longueur).
@@ -130,7 +131,7 @@ Rappel : La distance de Hamming est le nombre de positions où les nucléotides 
 <details><summary>Solution</summary>
    
 Distance de Hamming : 3
-Différences aux positions : 5 (G ↔ A), 8 (A ↔ G), et 14 (A ↔ G)
+Différences aux positions : 6 (G ↔ A), 8 (A ↔ G), et 14 (A ↔ G)
 
 </details>
 
@@ -150,10 +151,10 @@ Séquence 2 (modifiée) : ATG ACG TAA GAT AAA
 ```
 ATG -CG TAA CAT TTA A
 ATG ACG TAA GAT -AA A
-1   3   6   9   12
+1   4   7   10  13
 ```
 
-Il y a plusieurs manières d'aligner ces deux séquences mais on peut obtenir une distance de Levenshtein de 4 de cette manière. Ici, une délétion après le premier codon ATG permet de mieux aligner les séquences puis des substitutions aux positions 10, 13 et 14 permettent de compléter l'alignement.
+Il y a plusieurs manières d'aligner ces deux séquences mais on peut obtenir une distance de Levenshtein de 4 de cette manière. Ici, une insertion après le premier codon ATG permet de mieux aligner les séquences puis des substitutions aux positions 10, 13 et 14 permettent de compléter l'alignement.
 
 </details>
 
